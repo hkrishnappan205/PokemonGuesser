@@ -1,0 +1,68 @@
+<html>
+<head>
+<link rel = "stylesheet" href = "Weight.css">
+<title>POKEMON GAME</title>
+<script>
+score = 0;
+UserA = [];
+function Runner()
+{
+  var imagesSource = ['cha.jpg','Watchhog.png','sn.png','over.jpg'];
+  var answers = ['charizard','watchhog','snorlax'];
+  var x = document.getElementById("question").src;
+  UserA.push(document.getElementById("userAnswer").value);
+  if (x.includes("cha.jpg"))
+  {
+    if (answers[0] == document.getElementById("userAnswer").value)
+    {
+      score = score + 100;
+    }
+    document.getElementById("question").src = imagesSource[1];
+    document.getElementById("out").innerHTML = "Your Score is " + score + "/100";
+  }
+  else if (x.includes("Watchhog.png"))
+   {
+    if (answers[1] == document.getElementById("userAnswer").value)
+     {
+      score = score + 100;
+    }
+    document.getElementById("question").src = imagesSource[2];
+    document.getElementById("out").innerHTML = "Your Score is " + score + "/200";
+  }
+  else if (x.includes("sn.png"))
+  {
+    (document.getElementById("userAnswer").value);
+    if (answers[2] == document.getElementById("userAnswer").value)
+    {
+      score = score + 100;
+    }
+    console.log(UserA);
+    document.getElementById("question").src = imagesSource[3];
+    document.getElementById("out").innerHTML = "Your Score is " + score + "/300";
+    document.getElementById("kk").innerHTML = "The correct answers were charizard, watchhog, snorlax";
+    document.getElementById("jj").innerHTML = "Your answers were " + UserA + " ";
+  }
+  else if (x.includes("over.jpg"))
+  {
+    document.getElementById("question").src = imagesSource[0];
+  }
+}
+</script>
+</head>
+<body>
+<h1 id = h1>--TRY TO GUESS THE POKEMON--<h1>
+<hr id = "line">
+<br>
+<img src = 'cha.jpg' id ='question'></img>
+<br>
+<input type = "text" id = "userAnswer" placeholder = "GUESS THE POKEMON">
+<input type = "button" id = "button" value = "ENTER" onclick = "Runner()">
+<scpan id = "jim"></span>
+<br>
+<span id = "out"></span>
+<br>
+<span id = "kk"></span>
+<br>
+<span id = "jj"></span>
+</body>
+</html>

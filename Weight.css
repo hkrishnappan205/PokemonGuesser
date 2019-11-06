@@ -1,0 +1,84 @@
+body
+{
+  background-image: url("green.jpeg");
+}
+#line
+{
+  height: 3px;
+  color: white;
+  border-radius: 9px;
+}
+#userAnswer
+{
+  background-color: black;
+  border-color: white;
+  border-radius: 20px;
+  color: white;
+  width: 200px;
+  text-align: center;
+  margin-left: 530px;
+  border-width: 4px;
+
+}
+#button
+{
+  background-color: black;
+  border-color: white;
+  color: white;
+  border-radius: 20px;
+  border-width: 4px;
+  width: 90px;
+}
+#h1
+{
+  color: white;
+  border-color: black;
+  text-align: center;
+  font-family: serif;
+  font-weight: bold;
+}
+#out
+{
+  color: white;
+}
+#question
+{
+  height: 250px;
+  width: 350px;
+  margin-left: 500px;
+  margin-right: 500px;
+  border-radius: 30px;
+  border-color: black;
+  border: black;
+  border-width: 20px;
+}
+#out
+{
+  color: white;
+  text-align: center;
+  font-family: serif;
+  font-weight: bold;
+  font-size: 25px;
+  padding-left: 580px;
+  border-color: black;
+}
+#jj
+{
+  color: brown;
+  text-align: center;
+  font-family: serif;
+  font-weight: bold;
+  font-size: 30px;
+  border-color: black;
+  padding-left: 430px;
+}
+#kk
+{
+  color: brown;
+  text-align: center;
+  font-family: serif;
+  font-weight: bold;
+  font-size: 30px;
+  border-color: black;
+  padding-left: 360px;
+}
